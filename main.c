@@ -9,7 +9,7 @@ int main()
     int MAX, MIN = 1;
     int niveauDifficulte;
     int nombreMystere=0;
-    srand(time(NULL)); /*generation nb aléatoire*/
+    srand(time(NULL)); /*generation nb alÃ©atoire*/
 
     do /*boucle pour plusieurs parties*/
     {
@@ -19,7 +19,7 @@ int main()
 switch(nombreDeJoueur)//gestion nb mystere en fct du mode choisi//
 {
 case 1:
-    nombreMystere = (rand() % (MAX - MIN + 1)) + MIN; /*si un joueur alors nb aléatoire*/
+    nombreMystere = (rand() % (MAX - MIN + 1)) + MIN; /*si un joueur alors nb alÃ©atoire*/
     break;
 case 2:
     printf("Joueur 1, entrez le nombre mystere :"); /*si 2 joueurs nb choisi*/
@@ -33,12 +33,12 @@ default:
 
 if(nombreDeJoueur==1)
  {
-    printf("\t\t Niveau de difficulte :\n\n"); //choix du niv de difficulté//
+    printf("\t\t Niveau de difficulte :\n\n"); //choix du niv de difficultÃ©//
     printf("\t 1.Simple (nb compris entre 1 et 50)\n \t 2.Normal (nb compris entre 1 et 100)\n \t 3.Difficile (nb compris entre 1 et 500) \n");
     printf("Choisir un niveau de difficule :");
     scanf("%d",&niveauDifficulte);
 
-    switch(niveauDifficulte) /*gestion de la limite supérieur pour le nb aléatoire*/
+    switch(niveauDifficulte) /*gestion de la limite supÃ©rieur pour le nb alÃ©atoire*/
     {
     case 1:
         MAX=50;
@@ -59,7 +59,7 @@ if(nombreDeJoueur==1)
 
 int nombreJoueur=0, compteur=1;
 
-while(nombreJoueur!=nombreMystere) //boucle de jeu : compare le nb entré et le nb cherché//
+while(nombreJoueur!=nombreMystere) //boucle de jeu : compare le nb entrÃ© et le nb cherchÃ©//
 {
 
 printf("Quel est le nombre ?", MIN, MAX);
@@ -78,7 +78,7 @@ else
 {
     printf("Bravo, vous avez trouve le nombre mystere en %d coup(s)!!!\n",compteur);
     compteur=1;
-    printf("Voulez vous rejouer ?\n 0:non 1: oui "); //gère la possibilité de rejouer une partie//
+    printf("Voulez vous rejouer ?\n 0:non 1: oui "); //gÃ¨re la possibilitÃ© de rejouer une partie//
     scanf("%d", &nouvellePartie);
 }
 }
