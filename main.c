@@ -4,11 +4,7 @@
 
 int main()
 {
-    int nouvellePartie=1;
-    int nombreDeJoueur=1;
-    int MAX, MIN = 1;
-    int niveauDifficulte;
-    int nombreMystere=0;
+    int nouvellePartie=1, nombreDeJoueur=1, MAX, MIN = 1, niveauDifficulte, nombreMystere=0;
     srand(time(NULL)); /*generation nb aléatoire*/
 
     do /*boucle pour plusieurs parties*/
@@ -33,9 +29,9 @@ default:
 
 if(nombreDeJoueur==1)
  {
-    printf("\t\t Niveau de difficulte :\n\n"); //choix du niv de difficulté//
+    printf("\t\t Niveau de difficulte :\n\n"); //choix du niv de difficulte//
     printf("\t 1.Simple (nb compris entre 1 et 50)\n \t 2.Normal (nb compris entre 1 et 100)\n \t 3.Difficile (nb compris entre 1 et 500) \n");
-    printf("Choisir un niveau de difficule :");
+    printf("\t Choisir un niveau de difficule :");
     scanf("%d",&niveauDifficulte);
 
     switch(niveauDifficulte) /*gestion de la limite supérieur pour le nb aléatoire*/
